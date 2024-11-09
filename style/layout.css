@@ -34,10 +34,6 @@ body {
 .header__nav,
 .header__contact {
   display: none;
-  /* visibility: hidden;
-  width: 0;
-  overflow: hidden;
-  max-width: 0; */
 }
 
 
