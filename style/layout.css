@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  /* max-width: 1280px; deleted */
+  box-sizing: border-box;
+  background: #19191B;
+  font-family: "Nunito Sans",
+    sans-serif;
+  /* new */
+  display: flex;
+  justify-content: center;
+}
+
+/* new element */
+.container {
+  flex-grow: 1;
+  margin: 0 24px;
+  max-width: 1280px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.header__nav,
+.header__contact {
+  display: none;
+  /* visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  max-width: 0; */
+}
+
+
+.header__hamberger:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width:850px) {
+
+  .header {
+    padding-top: 42px;
+  }
+
+  .header__hamberger {
+    display: none;
+  }
+
+  .header__nav,
+  .header__contact {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .header__nav span:hover {
+    cursor: pointer;
+    color: #5454D4;
+  }
+
+  .header__contact {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 8px 10px 8px;
+  }
+
+  .header__contact:hover {
+    cursor: pointer;
+  }
+
+  .header__contact__text {
+    font-size: 16px;
+    width: 141px;
+    text-align: center;
+  }
+
+
+}
