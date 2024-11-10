@@ -4,20 +4,18 @@
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
-  /* max-width: 1280px; deleted */
+  width: 98vw;
   box-sizing: border-box;
   background: #19191B;
   font-family: "Nunito Sans",
     sans-serif;
-  /* new */
   display: flex;
   justify-content: center;
 }
 
-/* new element */
 .container {
   flex-grow: 1;
+  width: 100%;
   margin: 0 24px;
   max-width: 1280px;
 }
@@ -29,6 +27,59 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
+}
+
+.main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main__hero__text {
+  width: 100%;
+}
+
+.main__hero__text__title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 63px;
+}
+
+.main__hero__text__description {
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__hero__text__btn {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  background: #5454D4;
+  padding: 12px 21px;
+  width: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.main__hero__notext {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__nav,
@@ -68,6 +119,7 @@ body {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 12px 8px 10px 8px;
+    width: 141px;
   }
 
   .header__contact:hover {
@@ -76,9 +128,49 @@ body {
 
   .header__contact__text {
     font-size: 16px;
-    width: 141px;
     text-align: center;
   }
 
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .main__hero__text {
+    width: 100%;
+  }
+
+  .main__hero__notext {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main__hero__text__title {
+    margin-bottom: 24px;
+    font-size: 80px;
+    line-height: 84px;
+  }
+
+  .main__hero__text__description {
+    font-size: 21px;
+    line-height: 39px;
+    max-width: 536px;
+  }
+
+  .main__hero__text__btn {
+    font-size: 20px;
+    line-height: 27px;
+    padding: 16px 27px;
+    width: 204px;
+    border-radius: 4px;
+    margin-bottom: auto;
+  }
+
+  .main__hero__text__btn:hover {
+    cursor: pointer;
+  }
+
+  .main__hero__notext__img {
+    width: 100%;
+  }
 }
